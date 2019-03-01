@@ -41,9 +41,6 @@ export default class App extends Component<Props> {
             ref={r => (this.player = r)}
           />
         </View>
-        <Button onPress={() => this.player.stop()} title="Stop" />
-        <Button onPress={() => this.player.pause()} title="Pause" />
-        <Button onPress={() => this.player.resume()} title="Resume" />
       </View>
     );
   }
@@ -52,8 +49,8 @@ export default class App extends Component<Props> {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
+    // justifyContent: "center",
+    // alignItems: "center",
     backgroundColor: "#F5FCFF"
   },
   welcome: {
